@@ -1,0 +1,25 @@
+# Python (the asset pipeline in docs/brand-assets/scripts)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+iconenv/
+
+# OS metadata
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+ehthumbs.db
+desktop.ini
+# ...except the folder-icon template shipped with the brand assets
+!docs/brand-assets/windows/folder/desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local scratch, logs and session notes (never committed)
+*.tmp
+*.log

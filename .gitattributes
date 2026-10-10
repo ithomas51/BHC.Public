@@ -1,0 +1,34 @@
+# Line endings: text is stored with LF in the repository; Git picks the working-tree ending per platform.
+* text=auto
+
+# Text
+*.md           text diff=markdown
+*.py           text diff=python
+*.txt          text
+*.json         text
+*.webmanifest  text
+*.xml          text
+*.svg          text
+
+# Windows-only formats keep CRLF in the working tree (desktop.ini is read by Explorer)
+*.ini          text eol=crlf
+*.ps1          text eol=crlf
+*.bat          text eol=crlf
+*.cmd          text eol=crlf
+*.sh           text eol=lf
+
+# Binary: never diffed or converted
+*.png          binary
+*.jpg          binary
+*.jpeg         binary
+*.gif          binary
+*.webp         binary
+*.ico          binary
+*.icns         binary
+*.pdf          binary
+*.zip          binary
+*.7z           binary
+
+# Not part of `git archive` exports
+.gitattributes export-ignore
+.gitignore     export-ignore
